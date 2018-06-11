@@ -1,8 +1,12 @@
 
 package MainMethod;
+import homework.pkg10.PublicClass;
 
+    
 
 public class Mainmethod {
+    
+
     
     
     
