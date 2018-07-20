@@ -15,8 +15,13 @@ public class App {
         service.create(1, "nike", 43.0, "Sport");
         service.create(4, "adidas", 44, "casual");
         service.create(20, "Geox", 44.5, "Outdoor");
-//        service.showShoeList();
+        service.showShoeList();
+Product find=service.find(4);
+        System.out.println(find);
 //
+service.delete(4);
+//
+//service.showShoeList();
 //        System.out.println(" "); 
 //        Product findById = service.find(20);
 //        System.out.println(findById);
@@ -30,12 +35,12 @@ public class App {
 //        service.delete(2);
 //        service.showShoeList();
 
-        Product nike = new Shoe(1, "nike", 43.0, "Sport");
-
-        Product findNike = service.find(nike);
-        System.out.println(findNike);
-
-        System.out.println(nike.hashCode());
+//        Product nike = new Shoe(1, "nike", 43.0, "Sport");
+//
+//        Product findNike = service.find(nike);
+//        System.out.println(findNike);
+//
+//        System.out.println(nike.hashCode());
 //    service.create(0, "Nike", 49, " sport");
 //    service.create(1, "Reebok", 48, "casual");
 //    service.create(2, "Adidas", 48, "running");
